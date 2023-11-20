@@ -1,4 +1,10 @@
 
+section {
+	display: block;
+	height: 100%;
+	padding: 60px;
+	padding-left: 60px;
+}
 /* Header */
 
 #header {
@@ -53,7 +59,7 @@ li {
 		}
 
 
-/* Gambar Pertama*/
+/* Gambar Pertama (saya ambil gambar dari website aslinya, ora kepenak copyright)*/
 .image-section {
 	position: relative;
 	background-image: url('https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-uluwatu-bali-resort/gallery/overview/anantara_uluwatu_oceanview_03_g_a_h-1920x1080.jpg');
@@ -163,8 +169,12 @@ img {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
+	display: flex;	
+	background-color: #007a8d;
+	font-family: "Montserrat", sans-serif;
+	font-size: 10px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	border-radius: 5px;
 }
 
 #kontak {
@@ -172,7 +182,17 @@ img {
 	background-color: #f9f9f9;
 }
 
-.kontak-info,
+.kontak-info {
+	position: relative;
+	background-image: url('https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-uluwatu-bali-resort/gallery/overview/anantara_uluwatu_oceanview_03_g_a_h-1920x1080.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 10px;
+}
 .kontak-form {
 	width: 45%;
 	padding: 20px;
@@ -182,11 +202,23 @@ img {
 	margin: 10px;
 }
 
-	.kontak-info h2,
-	.kontak-form h2 {
-		color: #333;
-		font-size: 24px;
-	}
+.kontak-info h2 {
+	color: white;
+	font-size: 24px;
+}
+.kontak-info p {
+	color: white;
+	font-size: 12px;
+}
+.kontak-info li {
+	color: white;
+	font-size: 12px;
+}
+
+.kontak-form h2 {
+	color: #333;
+	font-size: 24px;
+}
 
 form label {
 	display: block;
@@ -195,7 +227,7 @@ form label {
 
 form input,
 form textarea {
-	width: 100%;
+	width: 95%;
 	padding: 10px;
 	margin-top: 5px;
 	border: 1px solid #ddd;
