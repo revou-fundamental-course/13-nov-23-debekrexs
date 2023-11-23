@@ -11,7 +11,7 @@
 
     <!-- Header -->
     <header id="header">
-        <h1>Travel Agency</h1>
+        <h1>Happy Travel</h1>
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -33,7 +33,7 @@
     <!-- Pack (saya menggunakan gambar dari website aslinya)-->
     <section id="Pack" class="product-grid">
         <div class="product">
-            <img src="https://cdn.contexttravel.com/image/upload/c_fill,h_840,q_60,w_840/v1696424860/production/page/value_prop_block_component/card/image__16964248607879aff2.jpg">
+            <img src="assets/ParisLefy.jpg">
              <h2>Paris Lefy Bank: Notre Dame to the Latin Quarter</h2>
              <p class="price">Discount 25%</p>
              <p>Follow Paris' backstreets to see art, histaory and urban culture brought to life</p>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="product">
-            <img src="https://cdn.contexttravel.com/image/upload/c_fill,h_840,q_60,w_840/v1696967601/production/page/value_prop_block_component/card/image__169696760108fa4693.jpg">
+            <img src="assets/Venice.jpg">
             <h2>In and Around Venice's St. Mark's Square</h2>
              <p class="price">Discount 30%</p>
              <p>Uncover Venetian history with an expert in your ear </p>
@@ -49,7 +49,7 @@
         </div>
 
         <div class="product">
-            <img src="https://cdn.contexttravel.com/image/upload/c_fill,h_840,q_60,w_840/v1698430157/production/page/value_prop_block_component/card/image__1698430157f7f629a5.jpg">
+            <img src="assets/Lisbon.jpg">
             <h2>Architecture of Lisbon</h2>
              <p class="price">Discount 30%</p>
              <p>Get an architect's perspective on city rebuilt after the earthquake of 1755</p>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="product">
-            <img src="https://cdn.contexttravel.com/image/upload/c_fill,h_840,q_60,w_840/v1698758718/production/page/value_prop_block_component/card/image__1698758718f659f527.jpg">
+            <img src="assets/Vienna.jpg">
             <h2>Classical Music of Vienna</h2>
              <p class="price">Discount 35%</p>
              <p>Waltz through the Old Town in the Musical steps of Mozart, Beethoven and Vivaldi</p>
@@ -67,40 +67,61 @@
 
     <!-- Contact -->
     <section id="kontak">
-             <div class="container">
-                <div class="kontak-info">
-                    <h2>Our Support Team is Ready to Help you</h2>
-                    <p>Please select the relevant topic in the side menu to help us support you accurately and faster.</p>
-                    <ul>
-                        <h2>Email: info@example.com</h2>
-                        <h2>Telepon: +123 456 7890</h2>
-                        <li>Pasaraya Blok M, Building B, 4th Floor Jl. Iskandarsyah II No. 2 South Jakarta 12160</li>
-                    </ul>
-                </div>
+             <div class="container-section">
+                <div class="img-box">
+                    <div class="img-slide fade">
+                        <img src="assets/S1.jpg" style="width:100%">
+                        <div class="text">Wandering through the wonders  - a journey to remember</div>
+                    </div>
+                    <div class="img-slide fade">
+                        <img src="assets/S2.jpg" style="width:100%">
+                        <div class="text">Exploring the breathtaking beauty  - where every corner tells a story</div>
+                    </div>
+                    <div class="img-slide fade">
+                        <img src="assets/S3.jpg" style="width:100%">
+                        <div class="text">Discovering the magic - where dreams meet reality</div>
+                    </div>
+                    <div class="img-slide fade">
+                        <img src="assets/S4.jpg" style="width:100%">
+                        <div class="text">Lost in time - where history comes alive</div>
+                    </div>
+                    <div class="img-slide fade">
+                        <img src="assets/S5.jpg" style="width:100%">
+                        <div class="text">Exploring the breathtaking beauty - where every corner tells a story</div>
+                    </div>
+                  </div>
                 <div class="kontak-form">
                     <h2>Contact Us</h2>
                     <form>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
-
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
-
+                        <div class="select-box">
+                            <label>Change Destination</label>
+                            <select>
+                                <option hidden>Change Destination</option>
+                                <option>Paris Lefy Bank</option>
+                                <option>Venice's St. Mark's Square</option>
+                                <option>Architecture of Lisbon</option>
+                                <option>Classical Music of Vienna</option>
+                            </select>
+                        </div>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
-
                         <button type="button">Send Message</button>
                     </form>
                 </div>
              </div>
         </section>
 
-
-    <footer>
+        <footer>
         &copy; Travel Explorer, since 1994
         <script>
             document.write("- " + new Date().getFullYear());
         </script>
     </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
